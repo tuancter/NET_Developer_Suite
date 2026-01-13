@@ -40,8 +40,6 @@ echo.
 echo Starting download of necessary tools...
 echo ---------------------------------------------------
 
-:: --- EXAMPLES (Replace with your own links) ---
-
 :: 1. VS Code
 :: call :DownloadFile "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user" "vscode.exe"
 
@@ -51,9 +49,23 @@ echo ---------------------------------------------------
 :: 3. Visual Studio Installer
 :: call :DownloadFile "https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=community&channel=stable&version=VS18&source=VSLandingPage&cid=2500:96daf4c80ba848068751b9f9a688ff0d" "vs_installer.exe"
 
-:: 4. Your other tools...
-:: call :DownloadFile "LINK" "FILE.exe"
+:: 4. Docker
+:: call :DownloadFile "https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module&_gl=1*148xoyb*_gcl_au*MTM3MTEyNjYzMC4xNzY4Mjc3NTI3*_ga*MTE2MzAyNjczMi4xNzY4Mjc3NTI4*_ga_XJWPQMJYHQ*czE3NjgyODkxOTQkbzIkZzEkdDE3NjgyODkxOTckajU3JGwwJGgw" "docker.exe"
 
+:: 5. pgAdmin4
+:: call :DownloadFile "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.11/windows/pgadmin4-9.11-x64.exe" "pgAdmin4.exe"
+
+:: 6. Cursor
+:: call :DownloadFile "https://api2.cursor.sh/updates/download/golden/win32-x64/cursor/2.3" "cursor.exe"
+
+:: 7. Dbeaver 
+:: call :DownloadFile "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe" "dbeaver.exe"
+
+:: 8. Antigravity
+:: call :DownloadFile "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/1.13.3-4533425205018624/windows-x64/Antigravity.exe" "antigravity.exe"
+
+:: 9. NodeJS 
+:: call :DownloadFile "https://nodejs.org/dist/v24.12.0/node-v24.12.0-x64.msi" "nodejs.exe"
 
 :: ===============================================================================================
 :: END OF USER CONFIGURATION
@@ -86,7 +98,7 @@ echo.
 exit /b
 
 :: ===============================================================================================
-:: FUNCTION 2: CRAWL PAGE FOR LINK BY ID (The new feature)
+:: FUNCTION 2: CRAWL PAGE FOR LINK BY ID
 :: ===============================================================================================
 :DownloadFromPageId
 set "PAGE_URL=%~1"
