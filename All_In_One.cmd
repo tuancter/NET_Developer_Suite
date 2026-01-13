@@ -42,11 +42,11 @@ echo ---------------------------------------------------
 
 :: --- EXAMPLES (Replace with your own links) ---
 
-:: 1. Download via Direct Link (Standard way)
-:: call :DownloadFile "https://github.com/git-for-windows/git/releases/download/v2.43.0.windows.1/Git-2.43.0-64-bit.exe" "git_setup.exe"
+:: 1. VS Code
+:: call :DownloadFile "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user" "vscode.exe"
 
-:: 2. Download by crawling a Webpage and finding an ID (New Feature)
-:: call :DownloadFromPageId "https://git-scm.com/install/windows" "auto-download-link" "git.exe"
+:: 2. Git Cli
+:: call :DownloadFromPageId "https://git-scm.com/install/windows" "auto-download-link" "git_setup.exe"
 
 :: 3. Visual Studio Installer
 :: call :DownloadFile "https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=community&channel=stable&version=VS18&source=VSLandingPage&cid=2500:96daf4c80ba848068751b9f9a688ff0d" "vs_installer.exe"
